@@ -30,7 +30,7 @@ button {
   transition: all 0.2s linear; 
 }
 
-span {
+button div {
   display: inline-block;
   width: 75px;
   height: 75px;
@@ -40,7 +40,10 @@ span {
   text-align: center;
   margin-inline: 8px;
   padding-top: 10px;
-  transition: all 0.7s ease 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
 }
 
 .toggle-ON{
@@ -51,7 +54,7 @@ span {
   background-color: rgb(203, 203, 203);
 }
 
-.toggle-OFF span{
+.toggle-OFF div {
   background-color: rgb(243, 67, 40);
   translate: -118px;
 }

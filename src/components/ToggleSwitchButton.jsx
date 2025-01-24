@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "../index.css";
 
 const ToggleSwitchButton = () => {
@@ -10,7 +10,13 @@ const ToggleSwitchButton = () => {
 
   return (
     <div>
-        <button className={`toggle-${value}`} onClick={handleClick}><span>{value}</span></button>
+        <button className={`toggle-${value}`} onClick={handleClick}>
+          <div>
+            <span>
+              {value}
+            </span>
+          </div>
+        </button>
     </div>
   )
 }
